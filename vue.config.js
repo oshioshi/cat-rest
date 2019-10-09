@@ -3,5 +3,8 @@
 const path = require('path')
 
 module.exports = {
-    publicPath: '/dist'
+    publicPath: './',
+    assetsDir: './',
+    outputDir: '../docs'
+    
 }
