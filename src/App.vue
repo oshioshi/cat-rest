@@ -2,7 +2,12 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/topCat">殿堂入り</router-link> |
+      <router-link to="/about">マイナー猫</router-link> |
+      <router-link to="/about">猫種</router-link> |
+      <router-link to="/about">今日のおすすめ</router-link>
+      <img alt="Vue logo" src="./assets/logo_catRest.png">
     </div>
     <router-view/>
   </div>
