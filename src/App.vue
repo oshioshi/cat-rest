@@ -10,11 +10,10 @@
       </router-link>
       
       <span>
-      <router-link to="/topCat">ラグドール</router-link> |
-      <router-link to="/about">マンチカン</router-link> |
-      <router-link to="/about">スコティッシュフォールド</router-link> |
-      <router-link to="/about">ノルウェージャンフォレストキャット</router-link> |
-      <router-link to="/about">メインクーン</router-link>
+      <router-link class="menuitem" to="/topCat">　ラグドール　</router-link>
+      <router-link class="menuitem" to="/about">　マンチカン　</router-link>
+      <router-link class="menuitem" to="/about">　スコティッシュフォールド　</router-link>
+      <router-link class="menuitem" to="/about">　ソマリ　</router-link>
       </span>
     </div>
     <router-view/>
@@ -23,7 +22,7 @@
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'mushin';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -35,11 +34,10 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #f3a6b4;
 }
 
 body {
@@ -65,6 +63,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.menuitem {
+  color: #ffffff;
+  font-size: 32px;
+  text-decoration: none;
 }
 
 </style>
