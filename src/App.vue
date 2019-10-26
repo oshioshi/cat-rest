@@ -10,13 +10,18 @@
       </router-link>
       
       <span>
-      <router-link class="menuitem" to="/topCat">　ラグドール　</router-link>
-      <router-link class="menuitem" to="/about">　マンチカン　</router-link>
-      <router-link class="menuitem" to="/about">　スコティッシュフォールド　</router-link>
-      <router-link class="menuitem" to="/about">　ソマリ　</router-link>
+      <router-link class="menuitem" to="/ragdoll">　ラグドール　</router-link>
+      <router-link class="menuitem" to="/munchkin">　マンチカン　</router-link>
+      <router-link class="menuitem" to="/scottish">　スコティッシュフォールド　</router-link>
       </span>
     </div>
     <router-view/>
+
+    <footer id="footer">
+      <p>
+      <small>© 2019 ねこやすみ</small>
+      </p>
+    </footer>
   </div>
 </template>
 
@@ -71,4 +76,17 @@ body {
   text-decoration: none;
 }
 
+#footer {
+  background-color: #bbe0d9;
+  width: 100vw;
+  height: 10vh;
+  padding: 0px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+small {
+  color: #ffffff;
+  font-size: 18px;
+}
 </style>

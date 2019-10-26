@@ -1,7 +1,7 @@
 
 <template>
-  <div class="topCat">
-    <h1>ラグドール</h1>
+  <div class="munchkin">
+    <h1>マンチカン</h1>
       <section v-if="hasError">
         Error.
       </section>
@@ -31,7 +31,7 @@ import axios from 'axios'
 import {Tweet} from 'vue-tweet-embed'
 
 export default{
-  name: 'topCat',
+  name: 'munchkin',
   components: {
     Tweet: Tweet
   },
@@ -43,7 +43,7 @@ export default{
     }
   },
   mounted() {
-    axios.get('https://wc44116dwf.execute-api.us-east-1.amazonaws.com/default/getTweets')
+    axios.get('https://mqsovxheh7.execute-api.us-east-1.amazonaws.com/default/getMunchkin')
       .then(function(response) {
         console.log(response.data.body.statuses)
         this.list = response.data.body.statuses

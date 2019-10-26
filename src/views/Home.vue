@@ -1,7 +1,8 @@
 <template>
   <div class="home">
+     <HelloWorld msg="take a rest with cats"/>
     <img alt="Vue logo" src="../assets/neko_osuwari.png">
-    <HelloWorld msg="take a rest with cats"/>
+   
   </div>
 </template>
 
