@@ -3,17 +3,24 @@
     <div id="top">
       <img id="topImg" alt="topImg" src="./assets/adorable-animal-baby-256632.jpg">
     </div>
-    <div id="nav">
+    <div class="nav">
       
       <router-link to="/">
-        <img alt="Vue logo" src="./assets/logo_catRest.png">
+        <img class="logoImg" alt="ねこやすみ" src="./assets/logo_catRest.png">
       </router-link>
       
-      <span>
+      <span class="menuPc">
       <router-link class="menuitem" to="/ragdoll">　ラグドール　</router-link>
       <router-link class="menuitem" to="/munchkin">　マンチカン　</router-link>
       <router-link class="menuitem" to="/scottish">　スコティッシュフォールド　</router-link>
       </span>
+
+      <div class="menu-trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
     </div>
     <router-view/>
 
@@ -32,17 +39,15 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-#nav {
-  padding: 30px;
+   background-color: #f4fffd;
 }
 
-#nav a {
+.nav a {
   font-weight: bold;
 }
 
-#nav a.router-link-exact-active {
-  color: #f3a6b4;
+.nav a.router-link-exact-active {
+  color: #C77556;
 }
 
 body {
@@ -50,19 +55,24 @@ body {
 }
 
 #top {
-  height: 80vh;
+  height: 90vh;
 }
 
 #topImg {
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
     object-fit: cover;
     object-position: 0% 75%;
 }
-#nav {
-  background-color: #bbe0d9;
+.logoImg {
+    width: 250px;
+    height: auto;
+    margin: 10px;
+}
+.nav {
+  background-color: #56c7b2;
   width: 100vw;
-  height: 20vh;
+  height: 10vh;
   padding: 0px;
   object-fit: cover;
   display: flex;
@@ -77,7 +87,7 @@ body {
 }
 
 #footer {
-  background-color: #bbe0d9;
+  background-color: #56c7b2;
   width: 100vw;
   height: 10vh;
   padding: 0px;
@@ -89,4 +99,80 @@ small {
   color: #ffffff;
   font-size: 18px;
 }
+
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+}
+.menu-trigger {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+}
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.menu-trigger span:nth-of-type(1) {
+  top: 3px;
+}
+.menu-trigger span:nth-of-type(2) {
+  top: 15px;
+}
+.menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+.menu-trigger.active span:nth-of-type(1) {
+  transform: translateY(12px) rotate(-45deg);
+}
+.menu-trigger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.menu-trigger.active span:nth-of-type(3) {
+  transform: translateY(-12px) rotate(45deg);
+}
+@media screen and (min-width: 701px) { 
+  .menu-trigger{
+    display: none;
+  }
+
+}
+@media screen and (max-width: 700px) { 
+  #topImg {
+      object-position: 15% 0%;
+  }  
+  .menuPc {
+  display:none; 
+  }
+
+}
 </style>
+<script>
+import $ from 'jquery' 
+export default {
+mounted() {
+  $('.menu-trigger').click(function() {
+      $(this).toggleClass('active');
+      $('.nav').toggleClass('active'); 
+    });
+  $(window).on('scroll',function(){     
+      if($(window).scrollTop() > $('#top').height()){
+          $('.nav').addClass('fixed');   
+      }
+      else{
+          $('.nav').removeClass('fixed');   
+      }
+  });
+}
+}    
+
+
+</script>

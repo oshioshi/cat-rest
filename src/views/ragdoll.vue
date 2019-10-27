@@ -2,6 +2,9 @@
 <template>
   <div class="ragdoll">
     <h1>ラグドール</h1>
+    <div class="cat_img">
+      <img alt="cat_ragdoll" src="../assets/cat_ragdoll.png">
+    </div>
       <section v-if="hasError">
         Error.
       </section>
@@ -23,6 +26,11 @@
 <style>
 ul{
   list-style: none;
+  padding: 20px;
+}
+img {
+  width: 20rem;
+  height: auto;
 }
 </style>
 

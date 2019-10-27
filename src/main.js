@@ -6,6 +6,7 @@ import './registerServiceWorker'
 import './assets/sass/style.scss'
 
 
+
 Vue.config.productionTip = false
 
 new Vue({
