@@ -2,8 +2,7 @@
   <div id="app">
     <div id="top">
       <img id="topImg" alt="topImg" src="./assets/adorable-animal-baby-256632.jpg">
-    </div>
-    <div class="nav">
+      <div class="nav">
       
       <router-link to="/">
         <img class="logoImg" alt="ねこやすみ" src="./assets/logo_catRest.png">
@@ -22,7 +21,13 @@
       </div>
 
     </div>
-    <router-view/>
+
+    </div>
+    
+    <main>
+      <router-view/>
+    </main>
+   
 
     <footer id="footer">
       <p>
@@ -55,7 +60,8 @@ body {
 }
 
 #top {
-  height: 90vh;
+  height: 100vh;
+  background-color: #55c7b3;
 }
 
 #topImg {
@@ -99,6 +105,12 @@ small {
   color: #ffffff;
   font-size: 18px;
 }
+
+.fixed{
+    position: fixed;
+    top: 0;
+}
+
 
 .menu-trigger,
 .menu-trigger span {
@@ -164,7 +176,7 @@ mounted() {
       $('.nav').toggleClass('active'); 
     });
   $(window).on('scroll',function(){     
-      if($(window).scrollTop() > $('#top').height()){
+      if($(window).scrollTop() > $('#topImg').height()){
           $('.nav').addClass('fixed');   
       }
       else{
