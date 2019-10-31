@@ -2,6 +2,12 @@
   <div id="app">
     <div id="top">
       <img id="topImg" alt="topImg" src="./assets/adorable-animal-baby-256632.jpg">
+      <p id="topMsg1">
+      仕事やバイトで疲れているあなた。猫が好きなあなた。
+      </p>
+      <p id="topMsg2">
+      ねこのツイートでも見て、ちょっと癒されていきませんか？？
+      </p>
       <div class="nav">
       
       <router-link to="/">
@@ -19,8 +25,16 @@
         <span></span>
         <span></span>
       </div>
-
     </div>
+
+      <div class="menuSp hiddenMenu">
+        <ul class="menuUl">
+          <li class="menuli"><router-link class="menuitem" to="/ragdoll">ラグドール</router-link></li>
+          <li class="menuli"><router-link class="menuitem" to="/munchkin">マンチカン</router-link></li>
+          <li class="menuli"><router-link class="menuitem" to="/scottish">スコティッシュフォールド</router-link></li>
+        </ul>
+      </div>
+
 
     </div>
     
@@ -59,9 +73,41 @@ body {
   margin:0px;
 }
 
+
+.menuUl {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.menuli {
+  padding: 40px;
+  
+}
+
 #top {
   height: 100vh;
   background-color: #55c7b3;
+  position: relative;
+}
+
+#topMsg1 {
+  position: absolute;
+  top: 1vh;
+  left: 3vw;
+  font-size: 2.5rem;
+  max-width: 70vw;
+  text-align: left;
+  transform: rotate(-2deg);
+}
+
+#topMsg2 {
+  position: absolute;
+  top: 70vh;
+  left: 20vw;
+  font-size: 2.5rem;
+  text-align: left;
+  transform: rotate(2deg);
 }
 
 #topImg {
@@ -92,6 +138,14 @@ body {
   text-decoration: none;
 }
 
+.menuSp {
+  width: 100%;
+  background-color: #56c7b2;
+  opacity: 0.95;
+  transition:0.3s all ease 0s;
+  z-index: 10;
+}
+
 #footer {
   background-color: #56c7b2;
   width: 100vw;
@@ -109,8 +163,20 @@ small {
 .fixed{
     position: fixed;
     top: 0;
+    z-index: 10;
 }
 
+.fixedMenu {
+    position: fixed;
+    top: 10vh;
+}
+
+.hiddenMenu {
+  opacity: 0;
+  visibility: hidden;
+  transition:0.3s all ease 0s;
+  z-index: -10;
+}
 
 .menu-trigger,
 .menu-trigger span {
@@ -151,6 +217,7 @@ small {
 .menu-trigger.active span:nth-of-type(3) {
   transform: translateY(-12px) rotate(45deg);
 }
+
 @media screen and (min-width: 701px) { 
   .menu-trigger{
     display: none;
@@ -164,6 +231,21 @@ small {
   .menuPc {
   display:none; 
   }
+  #topMsg1 {
+  top: 1vh;
+  left: 3vw;
+  font-size: 2rem;
+  max-width: 70vw;
+  text-align: left;
+  transform: rotate(-2deg);
+}
+#topMsg2 {
+  top: 65vh;
+  left: 20vw;
+  font-size: 2rem;
+  text-align: left;
+  transform: rotate(2deg);
+}
 
 }
 </style>
@@ -173,14 +255,16 @@ export default {
 mounted() {
   $('.menu-trigger').click(function() {
       $(this).toggleClass('active');
-      $('.nav').toggleClass('active'); 
+      $('.menuSp').toggleClass('hiddenMenu'); 
     });
   $(window).on('scroll',function(){     
       if($(window).scrollTop() > $('#topImg').height()){
           $('.nav').addClass('fixed');   
+          $('.menuSp').addClass('fixedMenu');   
       }
       else{
           $('.nav').removeClass('fixed');   
+          $('.menuSp').removeClass('fixedMenu');   
       }
   });
 }
