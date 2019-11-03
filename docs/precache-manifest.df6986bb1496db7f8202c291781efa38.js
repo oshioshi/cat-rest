@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "img/adorable-animal-baby-256632.514bd07b.jpg"
   },
   {
-    "revision": "9f0a1cdddb682e26d94599f1b0129772",
+    "revision": "0e2427f535c029ef00446a96aa00c380",
     "url": "index.html"
   },
   {
