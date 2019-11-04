@@ -38,6 +38,12 @@ export default new Router({
       name: 'scottish',
       
       component: () => import('./views/scottish.vue')
+    },
+    {
+      path: '/american',
+      name: 'american',
+      
+      component: () => import('./views/american.vue')
     }
   ]
 })

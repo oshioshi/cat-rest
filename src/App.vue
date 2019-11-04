@@ -15,9 +15,18 @@
       </router-link>
       
       <span class="menuPc">
-      <router-link class="menuitem" to="/ragdoll">　ラグドール　</router-link>
-      <router-link class="menuitem" to="/munchkin">　マンチカン　</router-link>
-      <router-link class="menuitem" to="/scottish">　スコティッシュフォールド　</router-link>
+      <router-link class="menuitem" to="/ragdoll">
+        <img class="menu_cat" alt="cat_ragdoll" src="./assets/cat_ragdoll.png">
+      </router-link>
+      <router-link class="menuitem" to="/munchkin">
+        <img class="menu_cat" alt="cat_munchkin" src="./assets/cat_munchkin.png">
+      </router-link>
+      <router-link class="menuitem" to="/scottish">
+        <img class="menu_cat" alt="cat_scottish_fold" src="./assets/cat_scottish_fold.png">
+      </router-link>
+      <router-link class="menuitem" to="/american">
+        <img class="menu_cat" alt="cat_american_shorthair" src="./assets/cat_american_shorthair.png">
+      </router-link>
       </span>
 
       <div class="menu-trigger">
@@ -32,6 +41,7 @@
           <li class="menuli"><router-link class="menuitem" to="/ragdoll">ラグドール</router-link></li>
           <li class="menuli"><router-link class="menuitem" to="/munchkin">マンチカン</router-link></li>
           <li class="menuli"><router-link class="menuitem" to="/scottish">スコティッシュフォールド</router-link></li>
+          <li class="menuli"><router-link class="menuitem" to="/american">アメリカンショートヘア</router-link></li>
         </ul>
       </div>
 
@@ -73,6 +83,10 @@ body {
   margin:0px;
 }
 
+.menu_cat {
+  max-height: 10vh;
+  width: auto;
+}
 
 .menuUl {
   padding: 0px;

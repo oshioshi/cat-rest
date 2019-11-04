@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import './registerServiceWorker'
 import './assets/sass/style.scss'
-
+import './mixins/reqJson.js'
 
 
 Vue.config.productionTip = false

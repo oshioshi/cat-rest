@@ -5,26 +5,34 @@
     <h3>↓さっそく癒される↓</h3>
 
     <div id="catList">
-    <router-link to="/ragdoll">
-    <div class="cat_img">
-      <img alt="cat_ragdoll" src="../assets/cat_ragdoll.png">
-      <p>ラグドール</p>
-    </div>
-    </router-link>
+      <router-link to="/ragdoll">
+      <div class="cat_img">
+        <img alt="cat_ragdoll" src="../assets/cat_ragdoll.png">
+        <p>ラグドール</p>
+      </div>
+      </router-link>
 
-    <router-link to="/munchkin">
-    <div class="cat_img">
-    <img alt="cat_munchkin" src="../assets/cat_munchkin.png">
-    <p>マンチカン</p>
-    </div>
-    </router-link>
+      <router-link to="/munchkin">
+      <div class="cat_img">
+      <img alt="cat_munchkin" src="../assets/cat_munchkin.png">
+      <p>マンチカン</p>
+      </div>
+      </router-link>
 
-    <router-link to="/scottish">
-    <div class="cat_img">
-    <img alt="cat_scottish_fold" src="../assets/cat_scottish_fold.png">
-    <p>スコティッシュフォールド</p>
-    </div>
-    </router-link>
+      <router-link to="/scottish">
+      <div class="cat_img">
+      <img alt="cat_scottish_fold" src="../assets/cat_scottish_fold.png">
+      <p>スコティッシュフォールド</p>
+      </div>
+      </router-link>
+
+      <router-link to="/scottish">
+      <div class="cat_img">
+      <img alt="cat_american_shorthair" src="../assets/cat_american_shorthair.png">
+      <p>アメリカンショートヘア</p>
+      </div>
+      </router-link>
+
     </div>
     
   
