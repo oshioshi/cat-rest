@@ -4,7 +4,7 @@
     
     <h3>↓さっそく癒される↓</h3>
 
-    <div id="catList">
+    <div class="catList">
       <router-link to="/ragdoll">
       <div class="cat_img">
         <img alt="cat_ragdoll" src="../assets/cat_ragdoll.png">
@@ -19,6 +19,9 @@
       </div>
       </router-link>
 
+    </div>
+    <div class="catList">
+
       <router-link to="/scottish">
       <div class="cat_img">
       <img alt="cat_scottish_fold" src="../assets/cat_scottish_fold.png">
@@ -26,10 +29,61 @@
       </div>
       </router-link>
 
-      <router-link to="/scottish">
+      <router-link to="/american">
       <div class="cat_img">
       <img alt="cat_american_shorthair" src="../assets/cat_american_shorthair.png">
       <p>アメリカンショートヘア</p>
+      </div>
+      </router-link>
+  
+    </div>
+    <div class="catList">
+
+      <router-link to="/exotic">
+      <div class="cat_img">
+      <img alt="cat_exotic_shorthair" src="../assets/cat_exotic_shorthair.png">
+      <p>エキゾチックショートヘア</p>
+      </div>
+      </router-link>
+   
+      <router-link to="/russian">
+      <div class="cat_img">
+      <img alt="cat_russian_blue" src="../assets/cat_russian_blue.png">
+      <p>ロシアンブルー</p>
+      </div>
+      </router-link>
+
+    </div>
+    <div class="catList">
+
+      <router-link to="/norwegian">
+      <div class="cat_img">
+      <img alt="cat_norwegian_forest_cat" src="../assets/cat_norwegian_forest_cat.png">
+      <p>ノルウェージャンフォレストキャット</p>
+      </div>
+      </router-link>
+
+      <router-link to="/bengal">
+      <div class="cat_img">
+      <img alt="cat_bengal" src="../assets/cat_bengal.png">
+      <p>ベンガル</p>
+      </div>
+      </router-link>
+
+    </div>
+    <div class="catList">
+
+      <router-link to="/maine">
+      <div class="cat_img">
+      <img alt="cat_maine_coon" src="../assets/cat_maine_coon.png">
+      <p>メインクーン</p>
+      </div>
+      </router-link>
+
+      <router-link to="/kitten">
+      <div class="cat_img">
+      <img alt="cat_kitten" src="../assets/pet_omocha_neko.png">
+      <p>？？？</p>
       </div>
       </router-link>
 
@@ -56,12 +110,12 @@ h3 {
   margin: 70px 10px 50px;
   font-size: 3rem;
 }
-#catList {
+.catList {
   display: flex;
-  justify-content:space-around;
+  justify-content:center;
 }
 img {
-  max-height: 20rem;
+  max-height: 15rem;
   width: auto;
 }
 .cat_img {
@@ -80,7 +134,7 @@ h3 {
   margin: 70px 10px 50px;
   font-size: 2.4rem;
 }
-#catList {
+.catList {
   display: flex;
   flex-direction: column;
   align-items: center;

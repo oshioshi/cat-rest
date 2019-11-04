@@ -27,6 +27,24 @@
       <router-link class="menuitem" to="/american">
         <img class="menu_cat" alt="cat_american_shorthair" src="./assets/cat_american_shorthair.png">
       </router-link>
+      <router-link class="menuitem" to="/exotic">
+        <img class="menu_cat" alt="cat_exotic_shorthair" src="./assets/cat_exotic_shorthair.png">
+      </router-link>
+      <router-link class="menuitem" to="/russian">
+        <img class="menu_cat" alt="cat_russian_blue" src="./assets/cat_russian_blue.png">
+      </router-link>
+      <router-link class="menuitem" to="/norwegian">
+        <img class="menu_cat" alt="cat_norwegian_forest_cat" src="./assets/cat_norwegian_forest_cat.png">
+      </router-link>
+      <router-link class="menuitem" to="/bengal">
+        <img class="menu_cat" alt="cat_bengal" src="./assets/cat_bengal.png">
+      </router-link>
+      <router-link class="menuitem" to="/maine">
+        <img class="menu_cat" alt="cat_maine_coon" src="./assets/cat_maine_coon.png">
+      </router-link>
+      <router-link class="menuitem" to="/kitten">
+        <img class="menu_cat" alt="cat_kitten" src="./assets/pet_omocha_neko.png">
+      </router-link>
       </span>
 
       <div class="menu-trigger">
@@ -42,6 +60,13 @@
           <li class="menuli"><router-link class="menuitem" to="/munchkin">マンチカン</router-link></li>
           <li class="menuli"><router-link class="menuitem" to="/scottish">スコティッシュフォールド</router-link></li>
           <li class="menuli"><router-link class="menuitem" to="/american">アメリカンショートヘア</router-link></li>
+          <li class="menuli"><router-link class="menuitem" to="/exotic">エキゾチックショートヘア</router-link></li>
+          <li class="menuli"><router-link class="menuitem" to="/russian">ロシアンブルー</router-link></li>
+          <li class="menuli"><router-link class="menuitem" to="/norwegian">ノルウェージャンフォレストキャット</router-link></li>
+          <li class="menuli"><router-link class="menuitem" to="/bengal">ベンガル</router-link></li>
+          <li class="menuli"><router-link class="menuitem" to="/maine">メインクーン</router-link></li>
+          <li class="menuli"><router-link class="menuitem" to="/exotic">エキゾチックショートヘア</router-link></li>
+          <li class="menuli"><router-link class="menuitem" to="/kitten">？？？</router-link></li>
         </ul>
       </div>
 

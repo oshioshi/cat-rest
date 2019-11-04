@@ -44,6 +44,42 @@ export default new Router({
       name: 'american',
       
       component: () => import('./views/american.vue')
+    },
+    {
+      path: '/exotic',
+      name: 'exotic',
+      
+      component: () => import('./views/exotic.vue')
+    },
+    {
+      path: '/russian',
+      name: 'russian',
+      
+      component: () => import('./views/russian.vue')
+    },
+    {
+      path: '/norwegian',
+      name: 'norwegian',
+      
+      component: () => import('./views/norwegian.vue')
+    },
+    {
+      path: '/bengal',
+      name: 'bengal',
+      
+      component: () => import('./views/bengal.vue')
+    },
+    {
+      path: '/maine',
+      name: 'maine',
+      
+      component: () => import('./views/maine.vue')
+    },
+    {
+      path: '/kitten',
+      name: 'kitten',
+      
+      component: () => import('./views/kitten.vue')
     }
   ]
 })
