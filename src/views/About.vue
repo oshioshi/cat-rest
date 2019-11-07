@@ -19,15 +19,15 @@
       </div>
       </router-link>
 
-    </div>
-    <div class="catList">
-
       <router-link to="/scottish">
       <div class="cat_img">
       <img alt="cat_scottish_fold" src="../assets/cat_scottish_fold.png">
       <p>スコティッシュフォールド</p>
       </div>
       </router-link>
+
+    </div>
+    <div class="catList">
 
       <router-link to="/american">
       <div class="cat_img">
@@ -36,9 +36,6 @@
       </div>
       </router-link>
   
-    </div>
-    <div class="catList">
-
       <router-link to="/exotic">
       <div class="cat_img">
       <img alt="cat_exotic_shorthair" src="../assets/cat_exotic_shorthair.png">
@@ -70,9 +67,6 @@
       </div>
       </router-link>
 
-    </div>
-    <div class="catList">
-
       <router-link to="/maine">
       <div class="cat_img">
       <img alt="cat_maine_coon" src="../assets/cat_maine_coon.png">
@@ -80,6 +74,9 @@
       </div>
       </router-link>
 
+    </div>
+    <div class="catList">
+      
       <router-link to="/kitten">
       <div class="cat_img">
       <img alt="cat_kitten" src="../assets/pet_omocha_neko.png">
@@ -122,6 +119,7 @@ img {
     margin-top: 40px;
     margin-bottom: 40px;
     text-decoration: none;
+    width: 300px;
 }
 
 @media screen and (max-width: 700px) { 

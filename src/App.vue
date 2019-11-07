@@ -65,7 +65,6 @@
           <li class="menuli"><router-link class="menuitem" to="/norwegian">ノルウェージャンフォレストキャット</router-link></li>
           <li class="menuli"><router-link class="menuitem" to="/bengal">ベンガル</router-link></li>
           <li class="menuli"><router-link class="menuitem" to="/maine">メインクーン</router-link></li>
-          <li class="menuli"><router-link class="menuitem" to="/exotic">エキゾチックショートヘア</router-link></li>
           <li class="menuli"><router-link class="menuitem" to="/kitten">？？？</router-link></li>
         </ul>
       </div>
@@ -120,7 +119,7 @@ body {
 }
 
 .menuli {
-  padding: 40px;
+  padding: 18px;
   
 }
 
@@ -173,7 +172,7 @@ body {
 
 .menuitem {
   color: #ffffff;
-  font-size: 32px;
+  font-size: 28px;
   text-decoration: none;
 }
 
@@ -182,7 +181,7 @@ body {
   background-color: #56c7b2;
   opacity: 0.95;
   transition:0.3s all ease 0s;
-  z-index: 10;
+  z-index: 100;
 }
 
 #footer {
@@ -202,7 +201,7 @@ small {
 .fixed{
     position: fixed;
     top: 0;
-    z-index: 10;
+    z-index: 100;
 }
 
 .fixedMenu {
@@ -257,19 +256,23 @@ small {
   transform: translateY(-12px) rotate(45deg);
 }
 
-@media screen and (min-width: 701px) { 
+@media screen and (min-width: 1031px) { 
   .menu-trigger{
     display: none;
   }
 
 }
+@media screen and (max-width: 1030px) { 
+  .menuPc {
+  display:none; 
+  }
+
+}
+
 @media screen and (max-width: 700px) { 
   #topImg {
       object-position: 15% 0%;
   }  
-  .menuPc {
-  display:none; 
-  }
   #topMsg1 {
   top: 1vh;
   left: 3vw;
@@ -296,6 +299,10 @@ mounted() {
       $(this).toggleClass('active');
       $('.menuSp').toggleClass('hiddenMenu'); 
     });
+  $('.menuitem').click(function() {
+    $('.menu-trigger').toggleClass('active');
+    $('.menuSp').toggleClass('hiddenMenu'); 
+  });
   $(window).on('scroll',function(){     
       if($(window).scrollTop() > $('#topImg').height()){
           $('.nav').addClass('fixed');   
