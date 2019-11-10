@@ -119,7 +119,7 @@ body {
 }
 
 .menuli {
-  padding: 18px;
+  padding: 10px;
   
 }
 
@@ -182,6 +182,7 @@ body {
   opacity: 0.95;
   transition:0.3s all ease 0s;
   z-index: 100;
+  height: 100vh;
 }
 
 #footer {

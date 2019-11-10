@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "js/chunk-e2e4405c.55a02a95.js"
   },
   {
-    "revision": "cbd5835dd61a2ac8483e",
-    "url": "css/app.bf994459.css"
+    "revision": "70fa09dfe17c491d0b14",
+    "url": "css/app.6c3b8679.css"
   },
   {
     "revision": "fb05c9ddd75edb9fd934",
@@ -84,8 +84,8 @@ self.__precacheManifest = [
     "url": "js/about.f2306392.js"
   },
   {
-    "revision": "cbd5835dd61a2ac8483e",
-    "url": "js/app.e8220ff3.js"
+    "revision": "70fa09dfe17c491d0b14",
+    "url": "js/app.254e3c72.js"
   },
   {
     "revision": "ec98091fe077a327fc90",
@@ -152,7 +152,7 @@ self.__precacheManifest = [
     "url": "img/cat_american_shorthair.a233400d.png"
   },
   {
-    "revision": "e370344ade437d0cc2d598f783ec35b6",
+    "revision": "e38e3294f17c7c2adcc24a446dbfdd2f",
     "url": "index.html"
   },
   {
