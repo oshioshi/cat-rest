@@ -2,7 +2,7 @@
   <div class="about">
     <h2>「ねこやすみ」では、Twitter上のねこ情報を猫種ごとにお届けします</h2>
     
-    <h3>↓さっそく癒される↓</h3>
+    <h3>さっそく癒される↓</h3>
 
     <div class="catList">
       <router-link to="/ragdoll">
@@ -129,8 +129,8 @@ img {
   font-size: 2rem;
 }
 h3 {
-  margin: 70px 10px 50px;
-  font-size: 2.4rem;
+  margin: 70px 2px 50px;
+  font-size: 2rem;
 }
 .catList {
   display: flex;

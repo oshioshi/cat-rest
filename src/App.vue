@@ -282,7 +282,7 @@ small {
   transform: rotate(-2deg);
 }
 #topMsg2 {
-  top: 65vh;
+  top: 60vh;
   left: 20vw;
   font-size: 2rem;
   text-align: left;
@@ -299,7 +299,7 @@ mounted() {
       $(this).toggleClass('active');
       $('.menuSp').toggleClass('hiddenMenu'); 
     });
-  $('.menuitem').click(function() {
+  $('.menuSp .menuitem').click(function() {
     $('.menu-trigger').toggleClass('active');
     $('.menuSp').toggleClass('hiddenMenu'); 
   });
