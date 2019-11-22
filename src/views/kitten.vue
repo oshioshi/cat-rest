@@ -1,8 +1,8 @@
 <template>
   <div class="kitten">
-    <h1>子猫</h1>
+    <h1>里親募集</h1>
     <div class="cat_img">
-      <img alt="cat_kitten" src="../assets/pet_omocha_neko.png">
+      <img alt="cat_kitten" src="../assets/neko_osuwari.png">
     </div>
     <catInfo jsonFileName = "kitten.json"/>
   </div> 

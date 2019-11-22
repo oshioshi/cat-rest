@@ -43,7 +43,7 @@
         <img class="menu_cat" alt="cat_maine_coon" src="./assets/cat_maine_coon.png">
       </router-link>
       <router-link class="menuitem" to="/kitten">
-        <img class="menu_cat" alt="cat_kitten" src="./assets/pet_omocha_neko.png">
+        <img class="menu_cat" alt="cat_kitten" src="./assets/neko_osuwari.png">
       </router-link>
       </span>
 
@@ -65,7 +65,7 @@
           <li class="menuli"><router-link class="menuitem" to="/norwegian">ノルウェージャンフォレストキャット</router-link></li>
           <li class="menuli"><router-link class="menuitem" to="/bengal">ベンガル</router-link></li>
           <li class="menuli"><router-link class="menuitem" to="/maine">メインクーン</router-link></li>
-          <li class="menuli"><router-link class="menuitem" to="/kitten">？？？</router-link></li>
+          <li class="menuli"><router-link class="menuitem" to="/kitten">里親募集</router-link></li>
         </ul>
       </div>
 
@@ -136,7 +136,7 @@ body {
   font-size: 2.5rem;
   max-width: 70vw;
   text-align: left;
-  transform: rotate(-2deg);
+  /* transform: rotate(-2deg); */
 }
 
 #topMsg2 {
@@ -145,7 +145,7 @@ body {
   left: 20vw;
   font-size: 2.5rem;
   text-align: left;
-  transform: rotate(2deg);
+  /* transform: rotate(2deg); */
 }
 
 #topImg {
@@ -313,6 +313,9 @@ mounted() {
           $('.nav').removeClass('fixed');   
           $('.menuSp').removeClass('fixedMenu');   
       }
+  });
+  $(document).ready( function(){
+    $('.logoImg').trigger('click');
   });
 }
 }    
