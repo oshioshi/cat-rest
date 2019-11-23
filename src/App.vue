@@ -81,6 +81,7 @@
       <p>
       <small>© 2019 ねこやすみ</small>
       </p>
+      <a class="contact" href="https://twitter.com/osshy_01"><div>お問い合わせや要望等はDMにて→＠osshy_01</div></a>
     </footer>
   </div>
 </template>
@@ -198,6 +199,13 @@ small {
   color: #ffffff;
   font-size: 18px;
 }
+.contact {
+  color: #2c3e50;
+  font-size: 1rem;
+}
+.contact div{
+  margin-bottom: 10px;
+}
 
 .fixed{
     position: fixed;
@@ -257,6 +265,12 @@ small {
   transform: translateY(-12px) rotate(45deg);
 }
 
+p.bodyMsg{
+  margin: 10px 10px 10px;
+  font-size: 1.3rem;  
+  line-height: 1.8;
+}
+
 @media screen and (min-width: 1031px) { 
   .menu-trigger{
     display: none;
@@ -280,14 +294,14 @@ small {
   font-size: 2rem;
   max-width: 70vw;
   text-align: left;
-  transform: rotate(-2deg);
+  /* transform: rotate(-2deg); */
 }
 #topMsg2 {
   top: 60vh;
   left: 20vw;
   font-size: 2rem;
   text-align: left;
-  transform: rotate(2deg);
+  /* transform: rotate(2deg); */
 }
 
 }
@@ -297,8 +311,8 @@ import $ from 'jquery'
 export default {
 mounted() {
   $('.menu-trigger').click(function() {
-      $(this).toggleClass('active');
-      $('.menuSp').toggleClass('hiddenMenu'); 
+    $(this).toggleClass('active');
+    $('.menuSp').toggleClass('hiddenMenu'); 
     });
   $('.menuSp .menuitem').click(function() {
     $('.menu-trigger').toggleClass('active');
@@ -319,6 +333,4 @@ mounted() {
   });
 }
 }    
-
-
 </script>

@@ -84,14 +84,6 @@
       </div>
       </router-link>
 
-      <router-link to="/about">
-      <div class="cat_img">
-      <img alt="about" src="../assets/neko_maru.png">
-      <p>ねこやすみとは？</p>
-      </div>
-      </router-link>
-
-
     </div>
     
   

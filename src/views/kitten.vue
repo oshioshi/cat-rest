@@ -4,6 +4,8 @@
     <div class="cat_img">
       <img alt="cat_kitten" src="../assets/neko_osuwari.png">
     </div>
+    <p class="bodyMsg">里親募集中の猫のTweetを集めました</p>
+    <p class="bodyMsg">ぜひ覗いてみてください</p>
     <catInfo jsonFileName = "kitten.json"/>
   </div> 
 </template>

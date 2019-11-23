@@ -4,6 +4,8 @@
     <div class="cat_img">
       <img alt="cat_ragdoll" src="../assets/cat_ragdoll.png">
     </div>
+    <p class="bodyMsg">「ぬいぐるみ」を意味するラグドール</p>
+    <p class="bodyMsg">抱っこされても嫌がることが少なく、ぐでーんと体を預けてきます</p>
     <catInfo jsonFileName = "ragdoll.json"/>
   </div> 
 </template>

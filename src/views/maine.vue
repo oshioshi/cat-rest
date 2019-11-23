@@ -4,6 +4,8 @@
     <div class="cat_img">
       <img alt="cat_maine_coon" src="../assets/cat_maine_coon.png">
     </div>
+    <p class="bodyMsg">大きな体が特徴的なメインクーン</p>
+    <p class="bodyMsg">人懐っこくとても賢い性格です</p>
     <catInfo jsonFileName = "maine.json"/>
   </div> 
 </template>

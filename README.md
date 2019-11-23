@@ -1,29 +1,31 @@
 # cat-rest
 
-## Project setup
+## 公開URL
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+https://cat-rest.com
 ```
 
-### Compiles and minifies for production
+## 概要
 ```
-npm run build
+猫のTweetを収集して表示するWebサイトです。
+猫種ごとに表示できます。
+
 ```
 
-### Run your tests
+## 詳細
 ```
-npm run test
+ソースはフロント側のみです。
+Tweet自体はLambda上でTwitter APIを使って取得しており、LambdaからS3に保存した猫のtweet情報をVueで参照しています。
+猫種はハッシュタグで判断しています。
+PWAに対応しています。
+
 ```
 
-### Lints and fixes files
+## 素材
 ```
-npm run lint
-```
+Free stock photos Pexels 
+ https://www.pexels.com/cats/
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+いらすとや 
+ https://www.irasutoya.com/
+```
