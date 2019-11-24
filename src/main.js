@@ -5,7 +5,7 @@ import store from './store'
 import './registerServiceWorker'
 import './assets/sass/style.scss'
 import './mixins/reqJson.js'
-
+import VueAnalytics from 'vue-analytics'
 
 Vue.config.productionTip = false
 
@@ -14,3 +14,8 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
+
+Vue.use(VueAnalytics, {
+  id: 'UA-153204145-1',
+  router
+})

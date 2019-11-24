@@ -89,7 +89,3 @@ export default new Router({
     }
   ]
 });
-
-router.afterEach((to, from) => {
-  gtag('config', 'UA-153204145-1', {'page_path': to.path});
-})
