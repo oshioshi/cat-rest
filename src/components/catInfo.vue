@@ -30,6 +30,7 @@ img {
 }
 .loadMsg {
   font-size: 2rem;
+  margin: 80px 0px 80px;
 }
 </style>
 <script>
