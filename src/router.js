@@ -82,10 +82,10 @@ export default new Router({
       component: () => import('./views/kitten.vue')
     },
     {
-      path: '/about',
-      name: 'About',
+      path: '/contact',
+      name: 'contact',
       
-      component: () => import('./views/About.vue')
+      component: () => import('./views/contact.vue')
     }
   ]
 })

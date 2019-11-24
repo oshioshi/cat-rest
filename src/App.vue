@@ -81,7 +81,6 @@
       <p>
       <small>© 2019 ねこやすみ</small>
       </p>
-      <a class="contact" href="https://twitter.com/osshy_01"><div>お問い合わせや要望等はDMにて→＠osshy_01</div></a>
     </footer>
   </div>
 </template>
@@ -198,10 +197,6 @@ body {
 small {
   color: #ffffff;
   font-size: 18px;
-}
-.contact {
-  color: #2c3e50;
-  font-size: 1rem;
 }
 .contact div{
   margin-bottom: 10px;

@@ -84,6 +84,13 @@
       </div>
       </router-link>
 
+      <router-link to="/contact">
+      <div class="cat_img">
+      <img alt="contact" src="../assets/neko_maru.png">
+      <p>お問い合わせ</p>
+      </div>
+      </router-link>
+
     </div>
     
   
