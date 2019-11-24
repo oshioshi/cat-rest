@@ -88,4 +88,8 @@ export default new Router({
       component: () => import('./views/contact.vue')
     }
   ]
+});
+
+router.afterEach((to, from) => {
+  gtag('config', 'UA-153204145-1', {'page_path': to.path});
 })
