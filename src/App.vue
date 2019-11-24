@@ -266,6 +266,10 @@ p.bodyMsg{
   line-height: 1.8;
 }
 
+.a8 {
+  margin-bottom: 15px;
+}
+
 @media screen and (min-width: 1031px) { 
   .menu-trigger{
     display: none;
