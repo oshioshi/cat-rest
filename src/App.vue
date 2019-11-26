@@ -159,8 +159,7 @@ body {
   left: 3.5vw;
   font-size: 3rem;
   text-align: left;
-  opacity: 50%;
-  /* transform: rotate(2deg); */
+  opacity: 0.5;
 }
 
 #topMsg4 {
@@ -169,8 +168,7 @@ body {
   left: 3vw;
   font-size: 1.5rem;
   text-align: left;
-  opacity: 50%;
-  /* transform: rotate(2deg); */
+  opacity: 0.5;
 }
 
 #topImg {
@@ -329,7 +327,6 @@ p.bodyMsg{
   left: 35vw;
   font-size: 2rem;
   text-align: left;
-  /* transform: rotate(2deg); */
 }
 }
 @media screen and (max-width: 330px) { 
@@ -338,7 +335,6 @@ p.bodyMsg{
   left: 35vw;
   font-size: 2rem;
   text-align: left;
-  /* transform: rotate(2deg); */
 }
 #topMsg3 {
   position: absolute;
@@ -346,7 +342,6 @@ p.bodyMsg{
   left: 3.5vw;
   font-size: 3rem;
   text-align: left;
-  /* transform: rotate(2deg); */
 }
 #topMsg4 {
   position: absolute;
@@ -354,7 +349,6 @@ p.bodyMsg{
   left: 3vw;
   font-size: 1.5rem;
   text-align: left;
-  /* transform: rotate(2deg); */
 }
 }
 </style>
