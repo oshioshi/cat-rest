@@ -6,7 +6,8 @@
       </section>
       <section v-else>
         <div class="loadMsg" v-if="loading">
-          ねこを探しています...
+          ねこを探しています
+          <img class="ld ld-bounce" src="../assets/loading.png" style="animation-duration:0.5s"/>
         </div>
         <div v-else>
           <ul>
@@ -24,10 +25,11 @@ ul{
   list-style: none;
   padding: 20px;
 }
-img {
+.desc_img {
   width: 20rem;
   height: auto;
 }
+
 .loadMsg {
   font-size: 2rem;
   margin: 80px 0px 80px;
