@@ -8,6 +8,8 @@
       <p id="topMsg2">
       ねこのツイートでも見て、ちょっと癒されていきませんか？？
       </p>
+      <p id="topMsg3">↓</p>
+      <p id="topMsg4">scroll</p>
       <div class="nav">
       
       <router-link to="/">
@@ -81,6 +83,9 @@
       <p>
       <small>© 2019 ねこやすみ</small>
       </p>
+      <p class="made-by">made by 
+        <a href="https://twitter.com/osshy_01" target="_blank">@osshy_01</a>
+      </p>
     </footer>
   </div>
 </template>
@@ -145,6 +150,26 @@ body {
   left: 20vw;
   font-size: 2.5rem;
   text-align: left;
+  /* transform: rotate(2deg); */
+}
+
+#topMsg3 {
+  position: absolute;
+  top: 70vh;
+  left: 3.5vw;
+  font-size: 3rem;
+  text-align: left;
+  opacity: 50%;
+  /* transform: rotate(2deg); */
+}
+
+#topMsg4 {
+  position: absolute;
+  top: 80vh;
+  left: 3vw;
+  font-size: 1.5rem;
+  text-align: left;
+  opacity: 50%;
   /* transform: rotate(2deg); */
 }
 
@@ -270,6 +295,10 @@ p.bodyMsg{
   margin-bottom: 15px;
 }
 
+.made-by a{
+  text-decoration: none;
+}
+
 @media screen and (min-width: 1031px) { 
   .menu-trigger{
     display: none;
@@ -297,12 +326,36 @@ p.bodyMsg{
 }
 #topMsg2 {
   top: 60vh;
-  left: 20vw;
+  left: 35vw;
   font-size: 2rem;
   text-align: left;
   /* transform: rotate(2deg); */
 }
-
+}
+@media screen and (max-width: 330px) { 
+  #topMsg2 {
+  top: 55vh;
+  left: 35vw;
+  font-size: 2rem;
+  text-align: left;
+  /* transform: rotate(2deg); */
+}
+#topMsg3 {
+  position: absolute;
+  top: 67vh;
+  left: 3.5vw;
+  font-size: 3rem;
+  text-align: left;
+  /* transform: rotate(2deg); */
+}
+#topMsg4 {
+  position: absolute;
+  top: 80vh;
+  left: 3vw;
+  font-size: 1.5rem;
+  text-align: left;
+  /* transform: rotate(2deg); */
+}
 }
 </style>
 <script>
