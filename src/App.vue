@@ -81,7 +81,7 @@
 
     <footer id="footer">
       <p>
-      <small>© 2019 ねこやすみ</small>
+      <small id="copy"></small>
       </p>
       <p class="made-by">made by 
         <a href="https://twitter.com/osshy_01" target="_blank">@osshy_01</a>
@@ -376,6 +376,9 @@ mounted() {
   });
   $(document).ready( function(){
     $('.logoImg').trigger('click');
+    var now = new Date();
+    var year = now.getFullYear();
+    $('#copy').text('© '+ year + ' ねこやすみ');
   });
 }
 }    
