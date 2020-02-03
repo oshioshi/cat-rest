@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    <h2>「ねこやすみ」では、Twitter上のねこ情報を猫種ごとにお届けします</h2>
+    <h2>「ねこやすみ」では、Twitter上のねこ画像を猫種ごとにお届けします</h2>
     
-    <h3>さっそく癒される↓</h3>
+    <h3>↓さっそく癒される↓</h3>
 
     <div class="catList">
       <router-link to="/ragdoll">
@@ -99,7 +99,7 @@
 
 <style scoped>
 h2 {
-  margin: 70px 50px 50px;
+  margin: 60px 50px;
   font-size: 2.5rem;
 }
 p {
@@ -111,7 +111,7 @@ a {
   text-decoration: none;
 }
 h3 {
-  margin: 70px 10px 50px;
+  margin: 60px 10px;
   font-size: 3rem;
 }
 .catList {

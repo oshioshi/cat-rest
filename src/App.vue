@@ -6,10 +6,8 @@
       仕事やバイトで疲れているあなた。猫が好きなあなた。
       </p>
       <p id="topMsg2">
-      ねこのツイートでも見て、ちょっと癒されていきませんか？？
+      ねこのツイートでも見て、癒されていきませんか？？
       </p>
-      <p id="topMsg3">↓</p>
-      <p id="topMsg4">scroll</p>
       <div class="nav">
       
       <router-link to="/">
@@ -97,7 +95,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-   background-color: #f4fffd;
+  background-color: #f4fffd;
 }
 
 .nav a {
@@ -129,7 +127,7 @@ body {
 }
 
 #top {
-  height: 100vh;
+  height: 60vh;
   background-color: #55c7b3;
   position: relative;
 }
@@ -146,36 +144,18 @@ body {
 
 #topMsg2 {
   position: absolute;
-  top: 70vh;
+  top: 35vh;
   left: 20vw;
   font-size: 2.5rem;
   text-align: left;
   /* transform: rotate(2deg); */
 }
 
-#topMsg3 {
-  position: absolute;
-  top: 70vh;
-  left: 3.5vw;
-  font-size: 3rem;
-  text-align: left;
-  opacity: 0.5;
-}
-
-#topMsg4 {
-  position: absolute;
-  top: 80vh;
-  left: 3vw;
-  font-size: 1.5rem;
-  text-align: left;
-  opacity: 0.5;
-}
-
 #topImg {
     width: 100vw;
-    height: 90vh;
+    height: 50vh;
     object-fit: cover;
-    object-position: 0% 75%;
+    object-position: 0% 55%;
 }
 .logoImg {
     width: 250px;
@@ -311,45 +291,39 @@ p.bodyMsg{
 }
 
 @media screen and (max-width: 700px) { 
+  #top {
+  height: 50vh;
+  background-color: #55c7b3;
+  position: relative;
+  }
   #topImg {
-      object-position: 15% 0%;
-  }  
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+    object-position: 15% 0%;
+  }
   #topMsg1 {
   top: 1vh;
   left: 3vw;
-  font-size: 2rem;
+  font-size: 1.6rem;
   max-width: 70vw;
   text-align: left;
   /* transform: rotate(-2deg); */
-}
+  }
 #topMsg2 {
-  top: 60vh;
+  top: 23vh;
   left: 35vw;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: left;
-}
+  }
 }
 @media screen and (max-width: 330px) { 
-  #topMsg2 {
-  top: 55vh;
-  left: 35vw;
-  font-size: 2rem;
-  text-align: left;
-}
-#topMsg3 {
-  position: absolute;
-  top: 67vh;
-  left: 3.5vw;
-  font-size: 3rem;
-  text-align: left;
-}
-#topMsg4 {
-  position: absolute;
-  top: 80vh;
-  left: 3vw;
+  #topMsg1 {
   font-size: 1.5rem;
-  text-align: left;
-}
+  }
+  #topMsg2 {
+  font-size: 1.5rem;
+  }
 }
 </style>
 <script>
