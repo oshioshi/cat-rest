@@ -91,6 +91,14 @@
       </div>
       </router-link>
 
+      <div class="cat_img">
+      <a href="https://dog-than.cat-rest.com" target="_blank">
+      <img alt="dog" src="../assets/akubi_dog.png">
+      <p>いぬ派はこっち</p>
+      </a>
+      </div>
+
+
     </div>
     
   
